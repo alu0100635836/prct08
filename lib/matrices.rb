@@ -21,9 +21,17 @@ class Matriz
         def +(other) #Para la suma de matrices
                 matriz3 = Array.new(@dimension) {|i| #creamos un array de arrays, de dimension @dimension, y cuya contenido en la posicion[i][j] será el resultado del bloque.
                 	Array.new(@dimension) {|j|
-                	@matriz[i][j] + other[i][j]
+                		@matriz[i][j] + other[i][j]
                 	}
 		}
+   	end
+
+   	def -(other) #Para la resta de matrices
+                matriz3 = Array.new(@dimension) {|i| #creamos un array de arrays, de dimension @dimension, y cuya contenido en la posicion[i][j] será el resultado del bloque.
+                	Array.new(@dimension) {|j|
+                		@matriz[i][j] - other[i][j]
+                	}
+            	}
    	end
 
 end

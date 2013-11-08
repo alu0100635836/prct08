@@ -18,5 +18,13 @@ class Matriz
          @matriz[ij.first][ij.last] #si son 2, devuelveme el elemento indicado.
         end
 
+        def +(other) #Para la suma de matrices
+                matriz3 = Array.new(@dimension) {|i| #creamos un array de arrays, de dimension @dimension, y cuya contenido en la posicion[i][j] será el resultado del bloque.
+                	Array.new(@dimension) {|j|
+                	@matriz[i][j] + other[i][j]
+                	}
+		}
+   	end
+
 end
 
