@@ -5,7 +5,7 @@ require 'matrices'
 describe Matriz do
 
 	before :each do
-        	@matriz = Matriz.new([1,1,1],[1,1,1],[1,1,1])
+        	@matriz = Matriz.new([1,1,1],[1,1,2],[1,1,1])
         	@matriz2 = Matriz.new([1,1,1],[1,1,1],[1,1,1])
 	end
 
@@ -54,15 +54,15 @@ describe Matriz do
 
         it "Multiplicación de dos matrices" do
                 @matriz3 = @matriz*@matriz2
-                @matriz3[0][0].should eq(1)
-                @matriz3[0][1].should eq(1)
-                @matriz3[0][2].should eq(1)
-                @matriz3[1][0].should eq(1)
-                @matriz3[1][1].should eq(1)
-                @matriz3[1][2].should eq(1)
-                @matriz3[2][0].should eq(1)
-                @matriz3[2][1].should eq(1)
-                @matriz3[2][2].should eq(1)
+                @matriz3[0][0].should eq(3)
+                @matriz3[0][1].should eq(3)
+                @matriz3[0][2].should eq(3)
+                @matriz3[1][0].should eq(3)
+                @matriz3[1][1].should eq(3)
+                @matriz3[1][2].should eq(3)
+                @matriz3[2][0].should eq(3)
+                @matriz3[2][1].should eq(3)
+                @matriz3[2][2].should eq(3)
         end
 
 end
